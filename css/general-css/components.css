@@ -1,0 +1,57 @@
+/* Buttons */
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 47px;
+  font-size: 2rem;
+  border: 0;
+  outline: 0;
+}
+
+.btn--normal {
+  padding: 1rem 3.6rem;
+}
+
+.btn--larger {
+  padding: 1rem 7.4rem;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+}
+
+.btn--color-dark {
+  color: #341303;
+}
+
+.btn--color-white {
+  color: var(--white);
+}
+
+.btn--bold {
+  font-weight: 700;
+}
+
+.btn--semi-bold {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .btn--normal {
+    padding: 1rem 4rem;
+  }
+
+  .btn--larger {
+    padding: 1rem 7.4rem;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .btn--normal {
+    padding: 1rem 10vw;
+  }
+
+  .btn--larger {
+    padding: 1rem 18.5vw;
+  }
+}
