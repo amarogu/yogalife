@@ -75,3 +75,20 @@
   height: 5.4rem;
   border-radius: 100%;
 }
+
+/* Grids */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--1x3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
