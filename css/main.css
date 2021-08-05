@@ -4,3 +4,21 @@
 }
 
 /* Profiles */
+.profile {
+  border-radius: 100%;
+  max-width: 11.618rem;
+}
+
+.profile__background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 14.2rem;
+  height: 14.2rem;
+  border-radius: 100%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(249, 201, 180, 0.51),
+    #f98958
+  );
+}
