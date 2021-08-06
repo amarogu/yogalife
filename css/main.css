@@ -57,15 +57,16 @@
 
 /* Cards */
 .card {
-  padding: 2rem 4rem;
+  padding: 1rem 1rem;
   border-radius: 15px;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.14);
-  overflow: hidden;
+  position: relative;
 }
 
 .card__image {
   position: absolute;
-  transform: translate(-1rem, -8rem);
+  left: 5rem;
+  top: -7rem;
   z-index: -1;
 }
 
@@ -75,7 +76,9 @@
 
 .card__line {
   display: inline-block;
-  width: 100%;
+  width: 60%;
+  margin-left: 50%;
+  transform: translateX(-50%);
   height: 0.8rem;
   background: rgba(231, 101, 44, 0.25);
   border-radius: 8px;
@@ -86,9 +89,6 @@
 }
 
 @media screen and (min-width: 500px) {
-  .card__image {
-    transform: translate(-9.5rem, -6.5rem);
-  }
 }
 
 /* Hero */
@@ -173,8 +173,9 @@
 }
 
 /* Advantages */
-.advantages {
+.advantages.grid.grid--1x4 {
   padding: 1rem;
+  overflow: hidden;
 }
 
 .card {
@@ -195,4 +196,31 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .advantages.grid.grid--1x4 {
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+  }
+
+  .advantages__title {
+    align-self: center;
+    text-align: left;
+    justify-self: center;
+  }
+
+  .advantages__title h2 {
+    margin-bottom: 2rem;
+  }
+
+  .card:nth-child(2) {
+    margin: 4rem auto;
+  }
+
+  .advantages {
+    column-gap: 3rem;
+  }
 }
