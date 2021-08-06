@@ -259,6 +259,10 @@ a {
   margin: 1.5rem 0;
 }
 
+.nav__list li a {
+  font-weight: bold;
+}
+
 .nav__social-media__container {
   display: flex;
   margin-top: 5rem;
@@ -309,6 +313,10 @@ a {
     align-items: center;
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .nav__list li a {
+    font-weight: 600;
   }
 
   .nav__wrapper {
