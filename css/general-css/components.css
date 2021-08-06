@@ -119,6 +119,10 @@ h3 {
   border-radius: 100%;
 }
 
+.social-media--smaller {
+  width: 2.5rem;
+}
+
 .social-media__wrapper {
   display: flex;
   align-items: center;
