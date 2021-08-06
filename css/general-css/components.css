@@ -69,6 +69,10 @@ h3 {
   background: var(--color-primary);
 }
 
+.btn--secondary {
+  background: var(--color-secondary);
+}
+
 .btn--color-dark {
   color: #341303;
 }
@@ -397,5 +401,154 @@ a {
 
   .collapsibles .nav__container {
     font-size: 1.6rem;
+  }
+}
+
+/* Footer */
+.footer__logo {
+  color: #7a3b00;
+  font-weight: bold;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.footer .list li {
+  margin: 1rem 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-primary);
+  padding-top: 5rem;
+}
+
+.footer__item,
+.footer__copyright {
+  text-align: center;
+  padding: 5rem 0;
+}
+
+#footer__first-li {
+  margin-top: 3rem;
+}
+
+.footer__copyright {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.last-footer-item {
+  margin-bottom: 3rem;
+}
+
+.footer__email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .btn {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__email img {
+  width: 43px;
+}
+
+.footer__email p {
+  margin-left: 2rem;
+}
+
+.coder {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.icon-author {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer h3 {
+    font-size: 1.6rem;
+  }
+
+  .footer__logo {
+    font-size: 2.4rem;
+    text-align: left;
+  }
+
+  .footer {
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .footer .btn {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      ". . . . ."
+      ". . copyright . .";
+    align-items: start;
+    font-size: 1.2rem;
+    column-gap: 4rem;
+  }
+
+  .footer__email {
+    margin-top: 2rem;
+    column-gap: 1rem;
+  }
+
+  .footer__email img {
+    width: 38px;
+  }
+
+  .footer__item,
+  .footer__copyright {
+    text-align: left;
+    padding: 0;
+  }
+
+  .footer__copyright {
+    margin-top: 5rem;
+  }
+
+  .footer__copyright {
+    grid-area: copyright;
+    text-align: center;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .footer {
+    font-size: 1.6rem;
+  }
+
+  .footer__logo {
+    font-size: 3rem;
+  }
+
+  .footer .btn {
+    font-size: 2rem;
   }
 }
