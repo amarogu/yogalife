@@ -90,3 +90,109 @@
     transform: translate(-9.5rem, -6.5rem);
   }
 }
+
+/* Hero */
+.hero {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.hero__image {
+  width: 85%;
+  margin-top: 5rem;
+}
+
+.hero__text {
+  text-align: center;
+}
+
+.hero__text h1 {
+  padding: 0 5%;
+  font-family: "Anonymous Pro", "Courier New", Courier, monospace;
+}
+
+.hero__text p {
+  padding: 0 10%;
+  margin-top: 4rem;
+}
+
+.hero__text a {
+  margin-top: 10rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__text p {
+    padding: 0 27%;
+  }
+
+  .hero__text h1 {
+    padding: 0 20%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__image {
+    align-self: center;
+    margin-top: 0;
+    width: 75%;
+    margin-left: 7.5rem;
+  }
+
+  .hero__text {
+    margin-top: 5rem;
+    text-align: left;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+    padding: 0 5rem;
+  }
+
+  .hero__text p {
+    padding: 0;
+    padding-right: 40%;
+    padding-left: 5rem;
+  }
+
+  .hero__text a {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .hero__image {
+    align-self: center;
+    margin-left: 9rem;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  .hero__image {
+    margin-left: 15rem;
+  }
+}
+
+/* Advantages */
+.advantages {
+  padding: 1rem;
+}
+
+.card {
+  max-width: 392px;
+  margin: 4rem auto;
+}
+
+.card:nth-child(2) {
+  margin-top: 9rem;
+}
+
+.advantages__title {
+  text-align: center;
+}
+
+.orange-text {
+  color: var(--color-secondary);
+}
+
+@media screen and (min-width: 1024px) {
+}
