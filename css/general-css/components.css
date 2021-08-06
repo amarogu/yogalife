@@ -115,6 +115,15 @@ h3 {
   width: 4.5rem;
 }
 
+.rounding {
+  border-radius: 100%;
+}
+
+.social-media__wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .social-media__background {
   display: flex;
   justify-content: center;
@@ -123,6 +132,28 @@ h3 {
   width: 5.4rem;
   height: 5.4rem;
   border-radius: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .social-media {
+    width: 3.5rem;
+  }
+
+  .social-media__background {
+    width: 4.4rem;
+    height: 4.4rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .social-media {
+    width: 4.5rem;
+  }
+
+  .social-media__background {
+    width: 5.4rem;
+    height: 5.4rem;
+  }
 }
 
 /* Grids */
@@ -139,5 +170,215 @@ h3 {
   .grid--1x3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Nav Bar */
+.nav {
+  padding: 1.8rem;
+}
+
+.nav__logo {
+  padding: 1rem 7rem;
+  background: var(--color-primary);
+  border-radius: 53.5px;
+  margin-right: 6vw;
+}
+
+.nav__logo p {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #7a3b00;
+}
+
+.hamburger {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  background: url(../../images/all/menu-svgrepo-com.svg);
+  cursor: pointer;
+}
+
+.nav__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collapsibles .nav__container {
+  max-height: 0;
+  opacity: 0;
+  font-size: 2rem;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7.3rem;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  box-shadow: 0 0 18px 4px rgb(99, 99, 99, 0.25);
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+
+.collapsibles--open .nav__container {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+.hamburger.hamburger--open {
+  width: 42px;
+  height: 42px;
+  margin-left: 10px;
+  transform: translateX(-10px);
+  animation: hamburger-transition 0.3s;
+  background: url(../../images/all/close-svgrepo-com.svg);
+}
+
+.nav--mobile__bar {
+  margin-top: 3rem;
+  width: 100%;
+  height: 6px;
+  background: var(--color-secondary);
+  border-radius: 10px;
+}
+
+.nav__list li {
+  margin: 1.5rem 0;
+}
+
+.nav__social-media__container {
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+@keyframes hamburger-transition {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .nav__logo {
+    padding: 1rem 10vw;
+  }
+
+  .nav__logo p {
+    font-size: 2rem;
+  }
+
+  .hamburger {
+    width: 32px;
+    height: 32px;
+  }
+
+  .hamburger.hamburger--open {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    justify-content: space-between;
+  }
+
+  .collapsibles .nav__container {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .nav__wrapper {
+    margin-left: initial;
+    margin-right: initial;
+    width: initial;
+    justify-content: initial;
+  }
+
+  .collapsibles .nav__container {
+    max-height: 100vh;
+    opacity: 1;
+    background-color: transparent;
+    box-shadow: initial;
+    flex-direction: row;
+    font-size: 1.3rem;
+    margin-top: 0;
+    width: initial;
+  }
+
+  .nav--mobile__bar {
+    display: none;
+  }
+
+  .nav__social-media__container {
+    margin: 0;
+    margin-right: 2rem;
+    position: absolute;
+    right: 0;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav__logo {
+    background: var(--color-primary);
+    margin-right: 0;
+  }
+
+  .nav__logo p {
+    font-size: 2rem;
+  }
+
+  .nav__list li {
+    display: inline;
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .nav {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+
+  .nav__social-media__container {
+    margin-right: calc(5rem + 2rem);
+  }
+
+  .nav__logo p {
+    font-size: 3rem;
+  }
+
+  .collapsibles .nav__container {
+    font-size: 1.6rem;
   }
 }
