@@ -3,6 +3,16 @@
   max-width: 13.1rem;
 }
 
+.icon--smaller {
+  width: 7.7rem;
+}
+
+@media screen and (max-width: 250px) {
+  .icon-smaller {
+    width: 8vw;
+  }
+}
+
 /* Profiles */
 .profile {
   border-radius: 100%;
@@ -42,5 +52,41 @@
   .profile__background {
     width: 6rem;
     height: 6rem;
+  }
+}
+
+/* Cards */
+.card {
+  padding: 2rem 4rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.14);
+  overflow: hidden;
+}
+
+.card__image {
+  position: absolute;
+  transform: translate(-1rem, -8rem);
+  z-index: -1;
+}
+
+.card--primary {
+  background: var(--color-primary);
+}
+
+.card__line {
+  display: inline-block;
+  width: 100%;
+  height: 0.8rem;
+  background: rgba(231, 101, 44, 0.25);
+  border-radius: 8px;
+}
+
+.card p {
+  text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .card__image {
+    transform: translate(-9.5rem, -6.5rem);
   }
 }
