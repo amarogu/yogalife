@@ -19,9 +19,11 @@
     <header>
       <nav class="nav">
         <div class="nav__wrapper">
-          <div class="nav__logo">
-            <p>YogaLife</p>
-          </div>
+          <a href="index.html">
+            <div class="nav__logo">
+              <p>YogaLife</p>
+            </div>
+          </a>
           <span class="hamburger"></span>
         </div>
         <div class="collapsibles" id="menu">
@@ -95,7 +97,7 @@
       </div>
       <img src="images/homepage/yoga-hero.svg" alt="" class="hero__image" />
     </section>
-    <section class="advantages grid grid--1x4">
+    <section class="advantages grid grid--1x4" id="advantages-section">
       <div class="advantages__title">
         <h2>Vantagens</h2>
         <p>Sessões de <span class="orange-text">Yoga</span>.</p>
@@ -144,7 +146,7 @@
         </div>
       </div>
     </section>
-    <section class="features">
+    <section class="features" id="features-section">
       <div class="features__container grid grid--2x2">
         <div class="media-object">
           <img
@@ -270,7 +272,7 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="footer__logo">
+      <div class="footer__logo" title="Vá para o topo">
         <a href="#" class="footer__anchor-link">
           <p>YogaLife</p>
           <img src="images/all/anchor.svg" alt="" class="anchor" />
@@ -279,18 +281,24 @@
       <div class="footer__item">
         <h3>Vantagens</h3>
         <ul class="list">
-          <li id="footer__first-li"><a href="">Pequeno valor</a></li>
-          <li><a href="">Sessões ao vivo e gravadas</a></li>
-          <li><a href="">Um perfil para toda a família</a></li>
+          <li id="footer__first-li">
+            <a href="#advantages-section">Pequeno valor</a>
+          </li>
+          <li><a href="#advantages-section">Sessões ao vivo e gravadas</a></li>
+          <li>
+            <a href="#advantages-section">Um perfil para toda a família</a>
+          </li>
         </ul>
       </div>
       <div class="footer__item">
         <h3>Oque você ganha ao assinar?</h3>
         <ul class="list">
-          <li id="footer__first-li"><a href="">Sessões presenciais</a></li>
-          <li><a href="">De bem com o Mundo</a></li>
-          <li><a href="">Assista onde quiser</a></li>
-          <li><a href="">Meditação</a></li>
+          <li id="footer__first-li">
+            <a href="#features-section">Sessões presenciais</a>
+          </li>
+          <li><a href="#features-section">De bem com o Mundo</a></li>
+          <li><a href="#features-section">Assista onde quiser</a></li>
+          <li><a href="#features-section">Meditação</a></li>
         </ul>
       </div>
       <div class="footer__item last-footer-item">
