@@ -190,3 +190,39 @@
     width: 70%;
   }
 }
+
+/* Info section */
+.info {
+  max-width: 684px;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info__text-content {
+  text-align: center;
+}
+
+.info__text-content p {
+  padding: 0 7%;
+}
+
+.info__text-content h2 {
+  margin-bottom: 2rem;
+}
+
+.info__main-image {
+  width: 60%;
+  align-self: center;
+  justify-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .info__text-content p {
+    padding: initial;
+  }
+
+  .info__main-image {
+    margin-top: 5rem;
+  }
+}
