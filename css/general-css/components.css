@@ -217,9 +217,9 @@ a {
 
 .hamburger {
   width: 52px;
-  height: 52px;
+  height: 42.33px;
   flex-shrink: 0;
-  background: url(../../images/all/menu-svgrepo-com.svg);
+  background: url(../../images/all/menu-hamburger.svg) center/100% no-repeat;
   cursor: pointer;
 }
 

@@ -93,8 +93,12 @@
 
 /* Hero */
 .hero {
-  max-width: 1700px;
+  max-width: 1500px;
   margin: 0 auto;
+}
+
+.hero .btn {
+  padding: 2rem 7rem;
 }
 
 .hero__image {
@@ -117,7 +121,7 @@
 }
 
 .hero__text a {
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -131,11 +135,16 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .hero {
+    padding-top: 13rem;
+    padding-bottom: 5rem;
+  }
+
   .hero__image {
     align-self: center;
-    margin-top: 0;
-    width: 75%;
-    margin-left: 7.5rem;
+    margin-top: -25px;
+    width: 90%;
+    margin-left: 4.5rem;
   }
 
   .hero__text {
@@ -162,7 +171,7 @@
 @media screen and (min-width: 1300px) {
   .hero__image {
     align-self: center;
-    margin-left: 9rem;
+    margin-left: 6rem;
   }
 }
 
@@ -176,6 +185,8 @@
 .advantages.grid.grid--1x4 {
   padding: 1rem;
   overflow: hidden;
+  padding-top: 10rem;
+  margin-bottom: 18rem;
 }
 
 .card {
@@ -220,8 +231,9 @@
     margin: 4rem auto;
   }
 
-  .advantages {
+  .advantages.grid.grid--1x4 {
     column-gap: 3rem;
+    padding-top: 20rem;
   }
 }
 
@@ -282,6 +294,7 @@
 .testimonials {
   max-width: 1128px;
   margin: 0 auto;
+  padding-top: 10rem;
 }
 
 .testimonials__text-title {
