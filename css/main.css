@@ -93,7 +93,7 @@
 
 /* Hero */
 .hero {
-  max-width: 1500px;
+  max-width: 1700px;
   margin: 0 auto;
 }
 
@@ -104,6 +104,8 @@
 .hero__image {
   width: 85%;
   margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero__text {
@@ -144,7 +146,8 @@
     align-self: center;
     margin-top: -25px;
     width: 90%;
-    margin-left: 4.5rem;
+    margin-left: 5rem;
+    margin-right: auto;
   }
 
   .hero__text {
@@ -165,19 +168,6 @@
 
   .hero__text a {
     margin-left: 5rem;
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  .hero__image {
-    align-self: center;
-    margin-left: 6rem;
-  }
-}
-
-@media screen and (min-width: 1750px) {
-  .hero__image {
-    margin-left: 15rem;
   }
 }
 

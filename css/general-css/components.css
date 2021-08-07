@@ -99,6 +99,12 @@ h3 {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .btn--larger {
+    padding: 1rem 5rem;
+  }
+}
+
 @media screen and (max-width: 250px) {
   .btn--normal {
     padding: 1rem 10vw;
@@ -409,6 +415,8 @@ a {
   color: #7a3b00;
   font-weight: bold;
   text-align: center;
+  display: flex;
+  column-gap: 2rem;
   font-size: 3rem;
   margin-bottom: 5rem;
 }
@@ -480,6 +488,15 @@ a {
   text-decoration: underline;
 }
 
+.anchor {
+  width: 20px;
+}
+
+.footer__anchor-link {
+  display: flex;
+  column-gap: 2rem;
+}
+
 @media screen and (min-width: 1024px) {
   .footer h3 {
     font-size: 1.6rem;
@@ -515,11 +532,15 @@ a {
 
   .footer__email {
     margin-top: 2rem;
-    column-gap: 1rem;
+    column-gap: 0.3rem;
+  }
+
+  .footer__email p {
+    margin-left: 0.3rem;
   }
 
   .footer__email img {
-    width: 38px;
+    width: 28px;
   }
 
   .footer__item,
