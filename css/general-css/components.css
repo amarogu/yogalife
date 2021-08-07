@@ -67,10 +67,22 @@ h3 {
 
 .btn--primary {
   background: var(--color-primary);
+  transition: background 0.5s, color 0.5s;
 }
 
 .btn--secondary {
   background: var(--color-secondary);
+  transition: background 0.5s, color 0.5s;
+}
+
+.btn--primary:hover {
+  background: var(--color-secondary);
+  color: var(--white);
+}
+
+.btn--secondary:hover {
+  background: var(--color-primary-darker);
+  color: #341303;
 }
 
 .btn--color-dark {
@@ -258,6 +270,7 @@ a {
 .collapsibles--open .nav__container {
   max-height: 100vh;
   opacity: 1;
+  margin-bottom: 5rem;
 }
 
 .hamburger.hamburger--open {
@@ -285,6 +298,13 @@ a {
 
 .nav__list li a {
   font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.3s;
+}
+
+.nav__list li a:hover {
+  text-decoration-color: var(--neutral);
 }
 
 .nav__social-media__container {
@@ -359,6 +379,7 @@ a {
     font-size: 1.3rem;
     margin-top: 0;
     width: initial;
+    margin-bottom: 0;
   }
 
   .nav--mobile__bar {
