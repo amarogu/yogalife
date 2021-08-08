@@ -9,6 +9,7 @@
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -4rem;
   transform: translate(25%, -50%);
 }
 
@@ -31,15 +32,24 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
+  transition: transform 0.3s;
+}
+
+.hero__item img:hover {
+  transform: scale(1.1) rotate(10deg);
 }
 
 .hero__item--left img {
   transform: translateX(-80%);
-  margin-top: 6rem;
+  margin-top: 4rem;
+}
+
+.hero__item--left img:hover {
+  transform: translateX(-80%) scale(1.1) rotate(10deg);
 }
 
 .hero__item--first {
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-bottom: 3rem;
 }
 
@@ -77,6 +87,7 @@
   .hero {
     max-width: 1800px;
     column-gap: 10rem;
+    margin-top: 5rem;
   }
 
   .hero h1 {
@@ -87,6 +98,7 @@
     transform: initial;
     width: 75%;
     align-self: center;
+    margin-top: initial;
   }
 
   .hero__item {
@@ -103,12 +115,24 @@
     transform: translateY(-20%);
   }
 
+  .hero__item img:hover {
+    transform: translateY(-20%) scale(1.1) rotate(10deg);
+  }
+
   .hero__item--left img {
     order: -1;
     margin-top: 0;
     transform: translate(-50%, -20%);
     margin-left: 0;
     margin-right: 2rem;
+  }
+
+  .hero__item--left img:hover {
+    transform: translate(-50%, -20%) scale(1.1) rotate(10deg);
+  }
+
+  .hero__item--first {
+    margin-top: 10rem;
   }
 
   .hero__item--left {
@@ -135,7 +159,8 @@
 }
 
 .features__main-image {
-  width: 100%;
+  width: 70%;
+  justify-self: center;
 }
 
 .features__item {
@@ -161,7 +186,7 @@
 
 @media screen and (min-width: 1024px) {
   .features {
-    margin-top: -10%;
+    margin-top: -1%;
   }
 
   .features__waves-decoration {
@@ -197,6 +222,8 @@
   padding: 2rem;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .info__text-content {

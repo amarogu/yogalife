@@ -324,6 +324,12 @@ a {
   }
 }
 
+@media screen and (max-height: 550px) {
+  .collapsibles--open .nav__container {
+    max-height: 1000vh;
+  }
+}
+
 @media screen and (max-width: 380px) {
   .nav__logo {
     padding: 1rem 10vw;
@@ -516,6 +522,16 @@ a {
 .footer__anchor-link {
   display: flex;
   column-gap: 2rem;
+}
+
+.footer .list a {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.3s;
+}
+
+.footer .list a:hover {
+  text-decoration-color: var(--neutral);
 }
 
 @media screen and (min-width: 1024px) {
