@@ -2,11 +2,13 @@
 .hero {
   padding: 2rem;
   text-align: center;
+  margin-top: 5rem;
 }
 
 .hero__main-image {
-  width: 100%;
+  width: 80%;
   margin-top: 5rem;
+  justify-self: center;
 }
 
 .hero h1 {
@@ -24,7 +26,6 @@
 @media screen and (min-width: 600px) {
   .hero__main-image {
     width: 70%;
-    justify-self: center;
   }
 
   .hero__text-below-title p:first-child {
@@ -73,6 +74,7 @@
 .benefits-section {
   text-align: center;
   padding: 3rem;
+  margin-top: 10rem;
 }
 
 .benefits-section h2 {
