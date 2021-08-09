@@ -259,7 +259,6 @@ a {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 7.3rem;
   background: #f9f9f9;
   padding: 1.5rem;
   box-shadow: 0 0 18px 4px rgb(99, 99, 99, 0.25);
@@ -271,6 +270,7 @@ a {
   max-height: 100vh;
   opacity: 1;
   margin-bottom: 5rem;
+  margin-top: 7.3rem;
 }
 
 .hamburger.hamburger--open {

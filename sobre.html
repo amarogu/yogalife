@@ -16,7 +16,111 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="about-section grid">
+    <header>
+      <nav class="nav">
+        <div class="nav__wrapper">
+          <a href="index.html">
+            <div class="nav__logo">
+              <p>YogaLife</p>
+            </div>
+          </a>
+          <span class="hamburger"></span>
+        </div>
+        <div class="collapsibles" id="menu">
+          <div class="nav__container">
+            <ul class="list nav__list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="origem.html">Origem</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="">Benefícios</a></li>
+              <li><a href="">Prática</a></li>
+              <li><a href="">Necessário</a></li>
+              <li><a href="">Contato</a></li>
+            </ul>
+            <span class="nav--mobile__bar"></span>
+            <div class="nav__social-media__container">
+              <span class="social-media__background">
+                <a
+                  href="https://www.facebook.com/"
+                  class="social-media__wrapper"
+                >
+                  <img
+                    src="images/all/facebook-svgrepo-com.svg"
+                    alt=""
+                    class="social-media--smaller"
+                  />
+                </a>
+              </span>
+              <span class="social-media__background">
+                <a
+                  href="https://br.linkedin.com/"
+                  class="social-media__wrapper"
+                >
+                  <img
+                    src="images/all/linkedin-big-logo-svgrepo-com.svg"
+                    alt=""
+                    class="social-media--smaller"
+                  />
+                </a>
+              </span>
+              <span class="social-media__background">
+                <a
+                  href="https://www.instagram.com/"
+                  class="social-media__wrapper"
+                >
+                  <img
+                    src="images/all/instagram-svgrepo-com.svg"
+                    alt=""
+                    class="social-media--smaller"
+                  />
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="hero grid grid--1x2">
+      <div class="hero__text-content">
+        <div class="hero__title">
+          <h1>Quer descobrir mais sobre nós e sobre as maravilhas do Yoga?</h1>
+          <p class="hero__cta">
+            <a href="#about-section-location">Clique Aqui!</a>
+          </p>
+        </div>
+        <div class="hero__text-content__content">
+          <div class="hero__item hero__upper-p">
+            <p>
+              Aqui você descobrirá um pouco mais sobre a nossa empresa, como ela
+              começou, a nossa missão, os nossos valores, a nossa visão, e
+              também saberá um pouquinho mais sobre o Yoga! Uma coisa
+              importantíssima para nós da YogaLife, é que nossos clientes nos
+              conheçam, e esta página está aqui justamente para isso!
+            </p>
+          </div>
+          <div class="hero__item hero__lower-p">
+            <img
+              src="images/about/lotus-yoga-svgrepo-com.svg"
+              alt="Uma imagem de uma flor simbolizando o Yoga e a meditação"
+              class="hero__flower"
+            />
+            <p>
+              A proposta da nossa empresa, como você já deve ter percebido, é o
+              Yoga, que tem como base e fundamento trabalhar o corpo e a mente,
+              através de disciplinas tradicionais de quem o pratica. Tudo isso e
+              muito mais você aprenderá na nossa plataforma, com professores
+              profissionais na área
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/about/mindfulness-bro.svg"
+        alt="Uma imagem de uma mulher fazendo Yoga com árvores ao fundo"
+        class="hero__main-image"
+      />
+    </section>
+    <section class="about-section grid" id="about-section-location">
       <div class="about-section__item">
         <img
           src="images/about/info-one-image.svg"
@@ -101,5 +205,63 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="footer__logo" title="Vá para o topo">
+        <a href="#" class="footer__anchor-link">
+          <p>YogaLife</p>
+          <img src="images/all/anchor.svg" alt="" class="anchor" />
+        </a>
+      </div>
+      <div class="footer__item">
+        <h3>Vantagens</h3>
+        <ul class="list">
+          <li id="footer__first-li">
+            <a href="index.html#advantages-section">Pequeno valor</a>
+          </li>
+          <li><a href="index.html#advantages-section">Sessões ao vivo e gravadas</a></li>
+          <li>
+            <a href="index.html#advantages-section">Um perfil para toda a família</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <h3>Oque você ganha ao assinar?</h3>
+        <ul class="list">
+          <li id="footer__first-li">
+            <a href="index.html#features-section">Sessões presenciais</a>
+          </li>
+          <li><a href="index.html#features-section">De bem com o Mundo</a></li>
+          <li><a href="index.html#features-section">Assista onde quiser</a></li>
+          <li><a href="index.html#features-section">Meditação</a></li>
+        </ul>
+      </div>
+      <div class="footer__item last-footer-item">
+        <h3>Testemunhos</h3>
+        <ul class="list">
+          <li id="footer__first-li"><a href="index.html#jenna">Jenna Anne</a></li>
+          <li><a href="index.html#joao">João Matheus</a></li>
+          <li><a href="index.html#stephane">Stephane Delgado</a></li>
+        </ul>
+      </div>
+      <div class="contact-container">
+        <a
+          href=""
+          class="btn btn--larger btn--secondary btn--color-white btn--bold"
+        >
+          contato
+        </a>
+        <div class="footer__email">
+          <img src="images/all/email-svgrepo-com.svg" alt="" />
+          <p>yogalife.inc@yoga.com</p>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>
+          Copyright © <em class="coder">Gustavo Amaro</em> 2021, Icons by
+          <a href="https://www.svgrepo.com/" class="icon-author">svgrepo.com</a>
+        </p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
