@@ -55,8 +55,6 @@
 
 .hero__link {
   margin-top: 2rem;
-  color: var(--color-secondary);
-  font-size: 1.7rem;
 }
 
 @media screen and (min-width: 768px) {

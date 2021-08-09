@@ -58,6 +58,11 @@ h3 {
   transform: translateX(0.5rem);
 }
 
+.hero__link {
+  color: var(--color-secondary);
+  font-size: 1.7rem;
+}
+
 /* Buttons */
 .btn {
   display: inline-block;
