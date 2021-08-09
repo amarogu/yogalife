@@ -1,0 +1,70 @@
+/* Hero */
+.hero {
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero__main-image {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.hero h1 {
+  margin-bottom: 4rem;
+}
+
+.hero__text-below-title p:first-child {
+  margin-bottom: 2rem;
+}
+
+.hero__link {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .hero__main-image {
+    width: 70%;
+    justify-self: center;
+  }
+
+  .hero__text-below-title p:first-child {
+    padding: 0 7%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .hero__main-image {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    max-width: 1453px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__text-below-title p:first-child {
+    padding: initial;
+  }
+
+  .hero__main-image {
+    align-self: center;
+    margin-top: 0;
+    justify-self: end;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1530px) {
+  .hero__content {
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  .hero__main-image {
+    width: 40%;
+  }
+}
