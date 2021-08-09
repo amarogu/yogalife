@@ -244,14 +244,14 @@ a {
 }
 
 .nav__logo p {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #7a3b00;
 }
 
 .hamburger {
-  width: 52px;
-  height: 42.33px;
+  width: 42px;
+  height: 32.33px;
   flex-shrink: 0;
   background: url(../../images/all/menu-hamburger.svg) center/100% no-repeat;
   cursor: pointer;
@@ -290,10 +290,10 @@ a {
 }
 
 .hamburger.hamburger--open {
-  width: 42px;
-  height: 42px;
+  width: 33.923076923077px;
+  height: 33.923076923077px;
   margin-left: 10px;
-  transform: translateX(-10px);
+  transform: translateX(-4.0384615384615px);
   animation: hamburger-transition 0.3s;
   background: url(../../images/all/close-svgrepo-com.svg);
 }
