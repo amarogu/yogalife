@@ -47,6 +47,17 @@ h3 {
   }
 }
 
+/* link arrow */
+.hero__link__arrow {
+  display: inline-block;
+  letter-spacing: -0.7rem;
+  transition: transform 0.2s;
+}
+
+.hero__link:hover .hero__link__arrow {
+  transform: translateX(0.5rem);
+}
+
 /* Buttons */
 .btn {
   display: inline-block;
