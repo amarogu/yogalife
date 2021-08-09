@@ -105,6 +105,7 @@
   .hero__main-image {
     margin-left: 5rem;
     width: 70%;
+    justify-self: end;
   }
 
   .hero__text-content {
