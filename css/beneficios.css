@@ -68,3 +68,67 @@
     width: 40%;
   }
 }
+
+/* Benefits */
+.benefits-section {
+  text-align: center;
+  padding: 3rem;
+}
+
+.benefits-section h2 {
+  margin-bottom: 1rem;
+}
+
+.benefits__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits__img {
+  width: 50%;
+  align-self: center;
+  order: 1;
+  margin-top: 6rem;
+  margin-bottom: 25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__img {
+    width: 30%;
+  }
+
+  .benefits__item__content p {
+    padding: 0 10%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .benefits-section {
+    max-width: 1078px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .benefits__img {
+    width: 20%;
+    order: initial;
+    margin: initial;
+    margin-right: 4rem;
+  }
+
+  .benefits__item__content p {
+    padding: initial;
+  }
+
+  .benefits__item {
+    flex-direction: row;
+    margin: 10rem 0;
+  }
+
+  .benefits__item--right .benefits__img {
+    order: 1;
+    margin-left: 4rem;
+    margin-right: initial;
+  }
+}
