@@ -56,3 +56,76 @@
     margin-top: -5rem;
   }
 }
+
+/* Practice section */
+.practice-section {
+  padding: 2rem;
+  text-align: center;
+  max-width: 575px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.practice-section__checklist {
+  text-align: left;
+}
+
+.practice-section__checklist li {
+  padding-right: 12.5%;
+  padding-left: 12.5%;
+  margin: 0.5rem 0;
+}
+
+.practice-section__checklist li::before {
+  content: "";
+  display: inline-block;
+  width: 3.6rem;
+  height: 3.6rem;
+  transform: translateY(25%);
+  background: url(../images/practice/icons8-check-mark-96.png) center/100%
+    no-repeat;
+}
+
+.practice-section__item {
+  display: flex;
+  flex-direction: column;
+  margin: 15rem 0;
+}
+
+.item__image {
+  order: 1;
+  width: 50%;
+  align-self: center;
+  margin: 6rem 0;
+}
+
+@media screen and (min-width: 400px) {
+  .item__image {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .practice-section {
+    max-width: 626px;
+    text-align: left;
+  }
+
+  .item__image {
+    order: initial;
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .practice-section__item {
+    flex-direction: row;
+  }
+
+  .item__image--margin-right {
+    margin-right: 2rem;
+  }
+
+  .practice-section__checklist li {
+    padding: 0;
+  }
+}
