@@ -81,6 +81,10 @@
   margin-bottom: 5rem;
 }
 
+.necessary-section__text-content__link {
+  color: var(--color-secondary);
+}
+
 @media screen and (min-width: 768px) {
   .necessary-section {
     max-width: 650px;
