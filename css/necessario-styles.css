@@ -31,7 +31,7 @@
 @media screen and (min-width: 1024px) {
   .hero {
     max-width: 1331px;
-    margin: 0 auto;
+    margin: 7.5rem auto;
     text-align: left;
     column-gap: 15rem;
   }
@@ -73,6 +73,14 @@
   margin-bottom: 2rem;
 }
 
+.necessary-section__item--left {
+  margin-top: 5rem;
+}
+
+.necessary-section__item--right {
+  margin-bottom: 5rem;
+}
+
 @media screen and (min-width: 768px) {
   .necessary-section {
     max-width: 650px;
@@ -88,6 +96,7 @@
   .necessary-section {
     max-width: 802px;
     text-align: left;
+    margin-bottom: 8.5rem;
   }
 
   .necessary-section__item {
