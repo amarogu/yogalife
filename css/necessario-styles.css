@@ -1,0 +1,51 @@
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero h1 {
+  padding-bottom: 2rem;
+}
+
+.hero__main-image {
+  width: 100%;
+  order: 1;
+}
+
+.hero__lower-text :first-child {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__lower-text :first-child {
+    padding: 0 15%;
+  }
+
+  .hero__main-image {
+    width: 70%;
+    justify-self: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    max-width: 1331px;
+    margin: 0 auto;
+    text-align: left;
+    column-gap: 15rem;
+  }
+
+  .hero__content-text {
+    margin-top: 5vw;
+  }
+
+  .hero__lower-text :first-child {
+    padding: initial;
+  }
+
+  .hero__main-image {
+    order: initial;
+    width: 100%;
+  }
+}
