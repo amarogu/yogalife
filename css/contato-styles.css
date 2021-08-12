@@ -33,6 +33,7 @@
     max-width: 1547px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 16.4rem;
   }
 
   .hero__lower-text > :first-child {
@@ -69,6 +70,7 @@
   clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 3%);
   padding: 4rem;
   padding-top: 10rem;
+  margin-top: 10rem;
 }
 
 .input-item input,
@@ -87,10 +89,6 @@
 .input-item input {
   padding-bottom: 0.1rem;
   margin-top: 8rem;
-}
-
-.input-item {
-  position: relative;
 }
 
 #message {
@@ -133,9 +131,7 @@
 
 .input-item .invalid__text {
   opacity: 0;
-  position: absolute;
-  bottom: -30%;
-  left: 0;
+  max-height: 0;
   transition: opacity 0.3s;
 }
 
@@ -143,12 +139,7 @@
   margin-top: 1rem;
   opacity: 1;
   color: #b60c0c;
-}
-
-.input-item .invalid-text__message {
-  position: initial;
-  bottom: initial;
-  left: initial;
+  max-height: 100vh;
 }
 
 @media screen and (min-width: 732px) {
@@ -168,6 +159,7 @@
 @media screen and (min-width: 1024px) {
   .contact-section {
     clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 6%);
+    margin-top: 20rem;
   }
 
   .contact-section__wrapper {
@@ -175,8 +167,9 @@
   }
 
   .form__btn--general {
-    font-size: 1.7rem;
+    font-size: 2rem;
     padding: 1rem 2rem;
+    padding-top: 1.1rem;
   }
 
   #message {
@@ -214,6 +207,32 @@
     margin-right: initial;
     justify-self: center;
   }
+
+  .input-item {
+    position: relative;
+  }
+
+  .input-item .invalid__text {
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+    max-height: initial;
+  }
+
+  .input-item .invalid-text__message {
+    position: initial;
+    bottom: initial;
+    left: initial;
+    max-height: 0;
+  }
+
+  .invalid .invalid-text__message {
+    max-height: 100vh;
+  }
+
+  .invalid .invalid__text {
+    max-height: initial;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -228,6 +247,8 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 .message-section__title {
