@@ -1,0 +1,60 @@
+<section class="contact-section grid grid--1x2">
+  <div class="contact-section__wrapper">
+    <div class="contact-section__form">
+      <h2 class="contact-section__header">Contato</h2>
+      <form action="" id="contact-form" class="grid grid--1x2">
+        <div class="input-items__wrapper">
+          <div class="input-item" id="item-name">
+            <input type="text" name="" id="name" placeholder="Name" />
+            <p class="invalid__text">Por favor insira um nome.</p>
+          </div>
+          <div class="input-item" id="item-email">
+            <input type="text" name="" id="email" placeholder="E-mail" />
+            <p class="invalid__text">Por favor insira um e-mail válido.</p>
+          </div>
+          <div class="input-item" id="item-phone">
+            <input type="text" name="" id="phone" placeholder="Telefone" />
+            <p class="invalid__text">Por favor insira um telefone.</p>
+          </div>
+          <div class="input-item" id="item-subject">
+            <input type="text" name="" id="subject" placeholder="Assunto" />
+            <p class="invalid__text">Por favor insira um assunto.</p>
+          </div>
+        </div>
+        <div class="input-item input-item--message" id="item-message">
+          <textarea name="" id="message" placeholder="Mensagem"></textarea>
+          <p class="invalid__text invalid-text__message">
+            Por favor insira uma mensagem
+          </p>
+          <div class="contact-section__form__btns">
+            <button
+              class="
+                btn
+                form__btn form__btn--general
+                btn--normal btn--rose btn--color-white btn--bold
+              "
+              onclick="validate(); return false"
+            >
+              enviar
+            </button>
+            <button
+              class="
+                btn
+                form__btn--lower form__btn--general
+                btn--normal btn--rose btn--color-white btn--bold
+              "
+              type="reset"
+            >
+              limpar
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <img
+    src="images/contact/time-management-bro.svg"
+    alt="Uma pessoa meditando com um relógio atrás, simbolizando organização de tempo"
+    class="contact-section__main-image"
+  />
+</section>

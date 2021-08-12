@@ -221,3 +221,46 @@
     clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 10%);
   }
 }
+
+/* Message section */
+.message-section {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-section__title {
+  padding-bottom: 2rem;
+}
+
+.message-section__lower-text {
+  margin-bottom: 3rem;
+}
+
+.message-section__main-image {
+  width: 100%;
+}
+
+@media screen and (min-width: 550px) {
+  .message-section {
+    max-width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .message-section__main-image {
+    width: 60%;
+    align-self: center;
+  }
+
+  .message-section__lower-text {
+    padding: 0 10%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .message-section__lower-text {
+    padding: initial;
+  }
+}
