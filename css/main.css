@@ -315,7 +315,7 @@
 .testimonials__text blockquote {
   margin-top: 2rem;
   padding-right: 7%;
-  padding-left: 5rem;
+  padding-left: 7%;
 }
 
 .testimonials__text-title p {
@@ -358,6 +358,7 @@
   }
 
   .testimonials__text blockquote {
+    padding-left: 5rem;
     padding-right: 15%;
   }
 
