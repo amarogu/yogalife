@@ -81,6 +81,15 @@ h3 {
   padding: 1rem 7.4rem;
 }
 
+.btn--rose {
+  background: #ff8882;
+  transition: background 0.5s;
+}
+
+.btn--rose:hover {
+  background: #ff7972;
+}
+
 .btn--primary {
   background: var(--color-primary);
   transition: background 0.5s, color 0.5s;
