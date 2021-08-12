@@ -2,6 +2,7 @@
 .hero {
   text-align: center;
   padding: 2rem;
+  padding-top: 0;
 }
 
 .hero__main-image {
@@ -29,6 +30,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .hero {
+    padding-top: 2rem;
+  }
+
   .hero__main-image {
     margin-top: 0;
   }

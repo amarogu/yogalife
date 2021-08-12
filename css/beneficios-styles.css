@@ -2,7 +2,8 @@
 .hero {
   padding: 2rem;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .hero__main-image {
@@ -44,6 +45,8 @@
     max-width: 1453px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5rem;
+    padding-top: 2rem;
   }
 
   .hero__text-below-title p:first-child {

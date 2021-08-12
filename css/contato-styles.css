@@ -2,6 +2,7 @@
 .hero {
   padding: 2rem;
   text-align: center;
+  padding-top: 0;
 }
 
 .hero__main-image {

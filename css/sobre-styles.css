@@ -2,7 +2,7 @@
 .hero {
   text-align: center;
   padding: 2rem;
-  padding-top: 5rem;
+  padding-top: 0;
 }
 
 .hero__flower {
@@ -48,6 +48,7 @@
   .hero {
     text-align: left;
     grid-template-columns: initial;
+    padding-top: 5rem;
   }
 
   .hero__flower {
